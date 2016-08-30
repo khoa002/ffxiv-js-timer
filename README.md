@@ -1,4 +1,4 @@
-# FFXIV Timers
+# FFXIV Timer
 
 This branch contains an FFXIV-specific timer implementation.
 
