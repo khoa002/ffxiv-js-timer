@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/khoa002/ffxiv-js-timer/issues"
   },
-  "homepage": "https://github.com/khoa002/ffxiv-js-timer#readme",
+  "homepage": "https://ffxiv-js-timer.herokuapp.com/",
   "devDependencies": {
     "cheerio": "^0.20.0",
     "grunt": "^0.4.5",

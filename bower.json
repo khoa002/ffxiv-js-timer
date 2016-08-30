@@ -11,7 +11,7 @@
     "clock",
     "ffxiv"
   ],
-  "homepage": "https://github.com/khoa002/ffxiv-js-timer",
+  "homepage": "https://ffxiv-js-timer.herokuapp.com/",
   "moduleType": [
     "amd"
   ],
