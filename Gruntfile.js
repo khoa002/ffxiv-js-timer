@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     jsdoc: {
       dist: {
-        src: ['<%= pkg.name %>.js' ],
+        src: ['<%= pkg.name %>.js'],
         options: {
           destination: 'doc',
           template: "node_modules/grunt-jsdoc/node_modules/ink-docstrap/template",
@@ -33,16 +33,20 @@ module.exports = function(grunt) {
     },
     copy: {
       main: {
-        files: [
-          { expand: true, src: [ 'web/*.{css,woff}' ], dest: 'build/', flatten: true },
-        ]
+        files: [{
+          expand: true,
+          src: ['web/*.{css,woff}'],
+          dest: 'build/',
+          flatten: true
+        }, ]
       }
     },
     parsetimers: {
       dist: {
-        files: [
-          { src: [ 'build/lodestone-timers.json', 'web/timers.json' ], dest: 'build/timers.json' }
-        ]
+        files: [{
+          src: ['build/lodestone-timers.json', 'web/timers.json'],
+          dest: 'build/timers.json'
+        }]
       }
     },
     scrapelodestone: {
@@ -66,7 +70,7 @@ module.exports = function(grunt) {
           baseUrl: "web",
           mainConfigFile: "web/ffxiv_main.js",
           name: "lib/almond/almond",
-          include: [ 'ffxiv_main' ],
+          include: ['ffxiv_main'],
           out: "build/ffxiv_optimized.js"
         }
       }
@@ -85,8 +89,8 @@ module.exports = function(grunt) {
       }
     },
     clean: {
-      build: [ 'build' ],
-      lodestone: [ 'build/lodestone-timers.json' ]
+      build: ['build'],
+      lodestone: ['build/lodestone-timers.json']
     }
   });
 
