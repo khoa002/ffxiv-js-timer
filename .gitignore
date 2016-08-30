@@ -1,0 +1,13 @@
+# Node modules
+/node_modules
+# Bower modules
+/bower_components
+# Bower copied files
+/web/lib
+
+# Generated files
+/build
+/doc
+
+# General junk
+*~
