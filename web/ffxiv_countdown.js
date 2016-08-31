@@ -205,12 +205,14 @@ define(['timer'], function(Timer) {
 					}
 					var m = '';
 					if (time.weeks > 0) {
-						m = '<span class="weeks">' + time.weeks + (time.weeks > 1 ? ' weeks' : 'week') + ', </span>';
+						m = '<span class="weeks">' + time.weeks + (time.weeks > 1 ? ' weeks' : ' week') + '</span>';
 					}
 					if (time.days > 0) {
-						m += '<span class="days">' + time.days + (time.days > 1 ? ' days' : ' day') + ', </span>';
+						m += '<span class="days">' + time.days + (time.days > 1 ? ' days' : ' day') + '</span>';
 					}
-					m += '<span class="hours">' + Timer.zeropad(time.hours) + ':' + Timer.zeropad(time.minutes) + ':' + Timer.zeropad(time.seconds) + '</span>';
+					m += '<span class="hours">' + Timer.zeropad(time.hours) + (time.hours > 1 ? ' hours' : ' hour') + '</span>';
+					m += '<span class="minutes">' + Timer.zeropad(time.minutes) + (time.minutes > 1 ? ' minutes' : ' minute') + '</span>';
+					m += '<span class="seconds">' + Timer.zeropad(time.seconds) + (time.seconds > 1 ? ' seconds' : ' second') + '</span>';
 					t.timerDiv.innerHTML = m;
 				}
 				if (timers.length == 0) {
