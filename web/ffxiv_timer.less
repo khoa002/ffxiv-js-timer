@@ -20,18 +20,18 @@
 	text-shadow: @color 0px 0px 4px, @color 0px 0px 3px, @color 0px 0px 2px;
 }
 
-// Custom timer font
-@font-face {
-	font-family: FFXIVWide;
-	src: url(xivwide.woff);
+*, html, body, button, input, select {
+  font-family: 'Comfortaa', sans-serif;
+  text-transform: lowercase;
 }
-html {
-	font-family: Helvetica, Arial, sans-serif;
+
+html, body {
 	font-size: 10pt;
-	background-color: #000;
+	background-color: #000 !important;
 	color: #DDD;
 	width: 100%;
 	margin: 0;
+	padding: 1em;
 }
 a, a:visited { color: #CCF; text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -116,7 +116,7 @@ a:hover { text-decoration: underline; }
 }
 .countdown {
 	text-align: center;
-	font-family: FFXIVWide, Helvetica, sans-serif;
+	font-family: 'Comfortaa', sans-serif;
 	font-size: 300%;
 	color: @countdownColor;
 	.textglow(@countdownGlowColor);
