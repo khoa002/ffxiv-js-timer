@@ -38,6 +38,9 @@ module.exports = function(grunt) {
           src: ['web/*.{css,woff}'],
           dest: 'build/',
           flatten: true
+        }, {
+          src: 'web/favicon.png',
+          dest: 'build/favicon.png'
         }, ]
       }
     },
