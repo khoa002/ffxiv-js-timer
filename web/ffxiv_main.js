@@ -1,6 +1,8 @@
 requirejs.config({
 	paths: {
-		timer: '../timer'
+		'jquery': '//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min',
+		'bootstrap': '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min',
+		'timer': '../timer'
 	}
 });
 requirejs(['ffxiv_countdown'], function(FFXIVCountdown) {
