@@ -1,6 +1,8 @@
 # FFXIV Timer
 
-This branch contains an FFXIV-specific timer implementation.
+View the [live demo](https://ffxiv-js-timer.herokuapp.com/).
+
+This branch contains an FFXIV-specific timer implementation. Modified version of [Xenoveritas' FFXIV Timer](https://github.com/Xenoveritas/js-timer/tree/ffxiv).
 
 ## Using
 
