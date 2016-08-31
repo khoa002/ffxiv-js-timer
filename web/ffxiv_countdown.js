@@ -235,7 +235,7 @@ define(['timer'], function(Timer) {
 				t.end = Date.parse(t.end);
 			}
 			var div = document.createElement('div');
-			div.className = type;
+			div.className = type + ' row';
 			var d = document.createElement('div');
 			d.innerHTML = t.name;
 			d.className = 'title';
@@ -248,9 +248,12 @@ define(['timer'], function(Timer) {
 			if (!t.type) {
 				t.type = '';
 			}
-			t.beforeClass = type + ' before ' + t.type;
-			t.activeClass = type + ' active ' + t.type;
-			t.afterClass = type + ' after ' + t.type;
+			// t.beforeClass = type + ' before ' + t.type;
+			// t.activeClass = type + ' active ' + t.type;
+			// t.afterClass = type + ' after ' + t.type;
+			t.beforeClass = div.className;
+			t.activeClass = div.className;
+			t.afterClass = div.className;
 			if (t.type == 'maintenance' || t.showDuration) {
 				d = document.createElement('div');
 				div.appendChild(d);
