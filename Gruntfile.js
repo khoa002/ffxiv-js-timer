@@ -41,6 +41,9 @@ module.exports = function(grunt) {
         }, {
           src: 'web/favicon.png',
           dest: 'build/favicon.png'
+        }, {
+          src: 'web/ffxiv-main-scen-complete.png',
+          dest: 'build/ffxiv-main-scen-complete.png'
         }, ]
       }
     },
