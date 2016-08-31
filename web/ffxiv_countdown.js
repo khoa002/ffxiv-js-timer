@@ -1,7 +1,7 @@
 /**
  * Module for the actual clock.
  */
-define(['timer'], function(Timer) {
+define(['jquery', 'bootstrap', 'timer'], function($, bootstrap, Timer) {
 	function FFXIVCountdown(container, timers, addBuiltins) {
 		if (arguments.length < 2) {
 			timers = [];
