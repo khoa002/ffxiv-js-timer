@@ -10,7 +10,7 @@ You must run `grunt` at least once to install the necessary third party librarie
 
 1. Install [Node](https://nodejs.org/)
 2. Run `npm install` to install necessary libraries
-3. Run `npm install --save grunt-cli` to install the CLI for grunt
+3. Run `npm install -g grunt-cli` to install the CLI for grunt
 4. Run `grunt` itself
 
 ## Testing with browsers that block AJAX to file: URLs
