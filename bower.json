@@ -1,9 +1,9 @@
 {
   "name": "ffxiv-timer",
-  "description": "FFXIV timers.",
+  "description": "FFXIV events/maintenance timers.",
   "main": "ffxiv_main.js",
   "authors": [
-    "Xenoveritas"
+    "Khoa Nguyen"
   ],
   "license": "MIT",
   "keywords": [
