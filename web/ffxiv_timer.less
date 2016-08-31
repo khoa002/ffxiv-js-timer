@@ -8,7 +8,7 @@
 // Colors for the box when it's during a period that the servers are down
 @boxDownTopColor: #600;
 @boxDownBottomColor: #300;
-@countdownColor: #FFF;
+@countdownColor: #F00;
 @countdownGlowColor: #6CF;
 
 .gradient (@from, @to) {
@@ -17,7 +17,7 @@
 }
 
 .textglow (@color) {
-	text-shadow: @color 0px 0px 4px, @color 0px 0px 3px, @color 0px 0px 2px;
+	/*text-shadow: @color 0px 0px 4px, @color 0px 0px 3px, @color 0px 0px 2px;*/
 }
 
 *, html, body, button, input, select {
@@ -27,7 +27,6 @@
 
 html, body {
 	font-size: 10pt;
-	background-color: #FFF !important;
 	color: #DDD;
 	width: 100%;
 	margin: 0;
@@ -119,6 +118,9 @@ html, body {
 	color: @countdownColor;
 	.textglow(@countdownGlowColor);
 }
+	.countdown span {
+		margin: 0 0.25em;
+	}
 .duration {
 	text-align: center;
 	font-size: 150%;
